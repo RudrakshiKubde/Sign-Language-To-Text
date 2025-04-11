@@ -53,7 +53,7 @@ model = Sequential([
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 
 # Train the model
-model.fit(X_train, y_train, epochs=50, validation_data=(X_test, y_test), batch_size=32)
+model.fit(X_train, y_train, epochs=80, validation_data=(X_test, y_test), batch_size=32)
 
 # Save the trained model
 model.save("sign_language_model.h5")
